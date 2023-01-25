@@ -1,0 +1,40 @@
+#include<stdio.h>
+int main()
+{
+    int n,k=0,p,c=0,arr[100],i,l=0,max=0,x=0,j;
+    scanf("%d%d",&n,&k);
+    while(n)
+    {
+      p=n%k;
+      arr[c++]=p;
+      n=n/k;
+    }
+    for(i=0;i<c;i++)
+    {
+        l=0;
+        if(arr[i]==0)
+        {
+        x=1;
+        l=1;
+        }
+        else
+        continue;
+        for(j=i+1;j<c;j++)
+        {
+            if(arr[j]==0)
+            {
+            l++;
+            }
+            else
+            {
+            break;
+            }
+        }
+        if(max<l)
+        max=l;
+    }
+    if(x==1)
+    printf("%d",max);
+    else
+    printf("-1");
+}
