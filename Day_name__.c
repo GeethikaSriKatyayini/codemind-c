@@ -5,34 +5,34 @@ int main()
     scanf("%c",&ch);
     if(ch=='1')
     {
-        printf("monday");
+        printf("Monday");
     }
     else if(ch=='2')
     {
-        printf("tuesday");
+        printf("Tuesday");
     }
     else if(ch=='3')
     {
-        printf("wednesday");
+        printf("Wednesday");
     }
     else if(ch=='4')
     {
-        printf("thursday");
+        printf("Thursday");
     }
     else if(ch=='5')
     {
-        printf("friday");
+        printf("Friday");
     }
     else if(ch=='6')
     {
-        printf("saturday");
+        printf("Saturday");
     }
     else if(ch=='7')
     {
-        printf("sunday");
+        printf("Sunday");
     }
     else
     {
-        printf("invalid input");
+        printf("Invalid input");
     }
 }
